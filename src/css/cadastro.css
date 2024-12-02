@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto",Arial, Helvetica, sans-serif;
+}
+/*COMEÇO MODAL CADASTRO*/
+.nav-items{
+    display: flex;
+}
+.nav-items li{
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3em;
+    padding: 2em;
+}
+.form-SuperContainer{
+    display: flex;
+    justify-content: center;
+}
+.form-container{
+    background-color: #ff9355;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 1em;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin-top: 1em;
+}
+.cadastro-titulo h2{
+    display: flex;
+    justify-content: center;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.input-group label{
+    display: flex;
+    margin: 0.3em;
+    font-size: 15;
+    font-weight: 500;
+    justify-content: center;
+    margin: 1em;
+}
+p{
+    color: #000000;
+    margin-left: 0.3em;
+}
+.input-group input{
+    margin-bottom: 0.3em;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+    width: 40em;
+}
+.input-group input:focus{
+    outline: none;
+    border: 3px solid #fff01a;
+}
+.input-group select{
+    margin-bottom: 0.3em;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+    width: 40em;
+}
+.input-group select:focus{
+    outline: none;
+    border: 3px solid #fff01a;
+}
+option{
+    background-color: #e1e1e1;
+    padding: 8px;
+}
+.titulo-opcionais{
+    display: flex;
+    flex-direction: column;
+}
+.titulo-opcionais h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+.container-lista-opcionais{
+    display: flex;
+    justify-content: center;
+}
+.opcionais{
+    display: flex;
+    flex-direction: column;
+}
+.opcionais ul{
+    display: flex;
+    flex-direction: column;
+    background-color: #ff9355;
+    border-radius: 10px;
+    padding: 12px;
+    width: 350px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.opcionais li{
+    display: flex;
+    justify-content:center ;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0.4em;
+}
+.titulo-opcionais{
+    margin: 1em 0 0 0;
+    border-radius: 5px 5px 0 0;
+}
+.opcionais h3{
+    display: flex;
+    justify-content: center;
+    margin: 3em 0 0.5em 1em;
+    text-transform: uppercase;
+}
+.opcionais label{
+    margin: 1em;
+    background-color: #fff893;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 8px;
+    border-radius: 2em;
+    display: flex;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+.botao-form{
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin: 4em 2em 2em 2em;
+    width: 300px;
+    border-radius: 20px;
+    padding: 6px;
+    background-color: #FF7E1D;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    transition: all linear 180ms;
+}
+button:hover{
+    transform: scale(1.05);
+    background-color: #ff8138;
+    font-weight: 600;
+}
+/*FIM MODAL CADASTRO*/
+/*SEPARAÇÃO OPCIONAIS*/
+.cadastro-separacao{
+    display: flex;
+    justify-content: center;
+}
+.cadastro-separacao hr{
+    margin: 0.3em;
+    padding: 0.1em;
+    width: 11em;
+    background-color: #FF7E1D;
+    border: none;
+    border-radius: 5px;
+}
+.separacao-opcionais{
+    display: flex;
+    justify-content: center;
+}
+.separacao-opcionais hr{
+    margin: 0.3em;
+    padding: 0.1em;
+    width: 6em;
+    background-color: #FF7E1D;
+    border: none;
+    border-radius: 5px;
+}
+/*FIM SEPARAÇÕES OPCIONAIS*/
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 925px){
+    .input-group input{
+        width: 30em;
+    }
+    .input-group select{
+        width: 30em;
+    }
+}
+@media screen and (max-width: 486px){
+    .input-group input{
+        width: 20em;
+    }
+    .input-group select{
+        width: 20em;
+    }
+}
+@media screen and (max-width:375px){
+    .opcionais ul{
+        width: 300px;
+    }
+}
+/* FIM RESPONSIVIDADE*/

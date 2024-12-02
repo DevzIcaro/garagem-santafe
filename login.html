@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="shortcut icon" type="image.jpg" href="src/images/favicon.ico">
+    
+    <!--Links CSS-->
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/login.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="moldura-logo">
+                <a href="index.html" class="logo">
+                    <img src="src/images/Santa Fé Veículos 2021.png" alt="">
+                </a>    
+            </div>
+        </div>
+        <nav>
+            <div class="sidebar">
+                <ul>
+                    <li onclick=hideSidebar()><a href="#" class="sidebar-btn-close"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="index.html" >Home</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-items">
+                <ul>
+                    <li><a href="index.html" class="esconderEmMobile">Home</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="nav-btn-menu esconderEmDesktop">
+                <ul>
+                    <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-login">
+            <div class="card-login">
+                <div class="topo-card">
+                    <div class="logo-login">
+                        <img src="src/images/Santa Fé Veículos 2021.png" alt="">
+                    </div>
+                    <div class="separacao-login">
+                        <hr>
+                    </div>
+                    <h1>LOG-IN</h1>
+                    <p>Está página só é utilizada por administradores e pessoal autorizado</p>
+                </div>
+
+                <div class="form-card">
+                    <form method="POST">
+                        <div class="input-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" placeholder="Digite seu ID de entrada">
+                        </div>
+                        <div class="input-group">
+                            <label for="senha">Senha:</label>
+                            <input type="password" placeholder="Digite sua senha">
+                        </div>
+    
+                        <div class="form-button">
+                            <button>Entrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="src/js/script.js"></script>
+</body>
+</html>

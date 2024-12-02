@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre</title>
+
+    <link rel="shortcut icon" type="image.jpg" href="src/images/favicon.ico">
+
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/cadastro.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="moldura-logo">
+                <a href="index.html" class="logo">
+                    <img src="src/images/Santa Fé Veículos 2021.png" alt="">
+                </a>
+            </div>
+        </div>
+        <nav>
+            <div class="sidebar">
+                <ul>
+                    <li onclick=hideSidebar()><a href="#" class="sidebar-btn-close"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-items">
+                <ul>
+                    <li><a href="index.html" class=" esconderEmMobile">Home</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-btn-menu esconderEmDesktop">
+                <ul>
+                    <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                viewBox="0 -960 960 960" width="24">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="cadastro-titulo">
+            <h2>MODAL CADASTRO</h2>
+            <div class="cadastro-separacao">
+                <hr>
+            </div>
+        </div>
+        <form method="POST">
+            <div class="form-SuperContainer">
+                <div class="form-container">
+                    <div class="input-group">
+                        <label for="imagem">Imagem<p>*</p></label>
+                        <input type="file" name="imagem" id="imagem" required>
+    
+                        <label for="km">KM<p>*</p></label>
+                        <input type="number" name="km" id="km" placeholder="Digite a kilometragem do carro"
+                            class="inputs-medios" required min="0">
+    
+                        <label for="ano">Ano<p>*</p></label>
+                        <input type="number" name="ano" id="ano" placeholder="Digite o ano do carro" class="inputs-medios"
+                            required min="0">
+    
+                        <label for="modelo">Modelo<p>*</p></label>
+                        <input type="text" name="modelo" id="modelo" placeholder="Digite o modelo do veículo" required>
+    
+                        <label for="carroceria">Carroceria<p>*</p></label>
+                        <select name="carroceria" id="carroceria">
+                            <option value="HATCH">HATCH</option>
+                            <option value="SEDAN">SEDAN</option>
+                            <option value="SUV">SUV</option>
+                            <option value="PICAPE">PICAPE</option>
+                            <option value="COUPE">COUPE</option>
+                            <option value="CROSSOVER">CROSSOVER</option>
+                        </select>
+    
+                        <label for="combustivel">Combustível <p>*</p></label>
+                        <select name="combustivel" id="combustivel">
+                            <option value="Flex">FLEX</option>
+                            <option value="Gasolina">GASOLINA</option>
+                            <option value="Etanol">ETANOL</option>
+                            <option value="Diesel">DIESEL</option>
+                        </select>
+    
+                        <label for="valor">Valor<p>*</p></label>
+                        <input type="number" name="valor" id="valor" placeholder="Digite o valor do carro"
+                            class="inputs-medios" required min="0">
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <div class="titulo-opcionais">
+                <h2>OPCIONAIS</h2>
+                <div class="separacao-opcionais">
+                    <hr>
+                </div>
+            </div>
+
+            <div class="container-lista-opcionais">
+                <div class="opcionais">
+                    <h3>Conforto Interior</h3>
+    
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Bancos de Couro</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Ajuste Elétrico dos Bancos</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Bancos Aquecidos e Ventilados</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Volante Aquecido</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Teto Solar</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Teto Panorâmico</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Revestimento Premium</label>
+                        </li>
+                    </ul>
+    
+
+                    <h3>Entretenimento e Conectividade</h3>
+    
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Sistemas de Áudio Premium</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Navegação GPS</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Telas de Entretenimento Traseiras</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Conectividade Bluetooth</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Apple CarPlay e Android Auto</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Comando de Voz</label>
+                        </li>
+                    </ul>
+    
+                    <div class="opcionais">
+                        <h3>Segurança</h3>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Freios ABS</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Sistemas avançados de assistência ao motorista(ADAS)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Revestimento Premium</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Frenagem Automática Emergêncial</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Controle de Cruzeiro Adaptativo</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Alerta de Colisão</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Sensores de Estacionamento</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Câmeras de visão traseira ou 360 graus</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Sistemas de Monitoramento de Ponto Cego</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Sistema de Aviso de Saída de Faixa</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Faróis Adaptativos</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="opcionais">
+                        <h3>Estilo Exterior</h3>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Rodas de Liga Leve</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Faróis de LED ou Xenon</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Retrovisores Elétricos e Aquecidos</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Spoilers e Kits Aerodinâmicos</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="opcionais">
+                        <h3>Desempenho</h3>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Pacotes de Desempenho</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Suspensão Esportiva</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Transmissão Automática</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Transmissão Manual</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Modos de Condução Selecionáveis</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Tração Dianteira</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Tração Traseira</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Tração 4x4</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Tração Integral</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="opcionais">
+                        <h3>Conveniência</h3>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Abertura Sem Chave</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Partida por Bortão</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Sistema de Estacionamento Automático</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Porta-malas com Abertura Automática</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Retrovisores com Atenuação Automática</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="opcionais">
+                        <h3>Economia de Combustível</h3>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Sistema de Start-Stop</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Recuperação de Energia de Frenagem</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="opcionais">
+                        <h3>Personalização e Estilo</h3>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Pintura Metálica</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Pintura Perolizada</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Estofado Personalizado</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Pacotes de Design Exclusivo</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="opcionais">
+                        <h3>Tecnologia Avançada</h3>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Reconhecimento de Sinais de Trânsito</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Carregamento sem fio para dispositivos móveis</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Head-up Display</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Controle de Voz Avançado</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="opcionais">
+                        <h3>Segurança</h3>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Alarme Antifurto</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Sistema de Rastreamento Veicular</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="botao-form">
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </main>
+
+    <!--JAVASCRIPT-->
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações</title>
+    <link rel="shortcut icon" type="image.jpg" href="src/images/favicon.ico">
+    <!--Remixicon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" crossorigin="">
+
+    <!--Links CSS-->
+    <link rel="stylesheet" href="src/css/info-carro.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="moldura-logo">
+                <a href="index.html" class="logo">
+                    <img src="src/images/Santa Fé Veículos 2021.png" alt="">
+                </a>    
+            </div>
+        </div>
+        <nav>
+            <div class="sidebar">
+                <ul>
+                    <li onclick=hideSidebar()><a href="#" class="sidebar-btn-close"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html" >Catálogo</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-items">
+                <ul>
+                    <li><a href="catalogo.html" class="esconderEmMobile">Catálogo</a></li>
+                    <li><a href="index.html" class=" esconderEmMobile">Home</a></li>
+                </ul>
+            </div>
+        
+            <div class="nav-btn-menu esconderEmDesktop">
+                <ul>
+                    <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="Carousel" id="Carousel">
+            <div class="carousel topicos">
+                <div class="carousel-item card-visivel">
+                    <div class="card">
+                        <div class="imagem-carro">
+                            <img src="src/images/carro1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="imagem-carro">
+                            <img src="src/images/carro2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="imagem-carro">
+                            <img src="src/images/carro3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-acoes">
+                    <button id="carousel_button--prev">
+                        <img src="src/images/setas/left-arrow.png" alt="">
+                    </button>
+
+                    <button id="carousel_button--next">
+                        <img src="src/images/setas/right-arrow.png" alt="">
+                    </button>
+                </div>
+
+            </div>
+        </section>
+        <section id="Informacoes-gerais">
+            <div class="informacoes-gerais-container">
+                <div class="informacoes-gerais-conteudo">
+                    <div class="titulo-gerais">
+                        <div class="icons-gerais">
+                            <img src="src/images/icons/dirigir.png" alt="">
+                        </div>
+                        <h2>KM</h2>
+                    </div>
+                    <div class="separacao-gerais">
+                        <hr>
+                    </div>
+                    <p>30.000</p>
+                </div>
+
+
+                <div class="informacoes-gerais-conteudo">
+                    <div class="titulo-gerais">
+                        <div class="icons-gerais">
+                            <img src="src/images/icons/data-limite.png" alt="">
+                        </div>
+                        <h2>ano</h2>
+                    </div>
+                    <div class="separacao-gerais">
+                        <hr>
+                    </div>
+                    <p>1997</p>
+                </div>
+
+
+
+                <div class="informacoes-gerais-conteudo">
+                    <div class="titulo-gerais">
+                        <div class="icons-gerais">
+                            <img src="src/images/icons/modelo.png" alt="">
+                        </div>
+                        <h2>modelo</h2>
+                    </div>
+                    <div class="separacao-gerais">
+                        <hr>
+                    </div>
+                    <p>Polo</p>
+                </div>
+
+                <div class="informacoes-gerais-conteudo">
+                    <div class="titulo-gerais">
+                        <div class="icons-gerais">
+                            <img src="src/images/icons/pecas-de-reposicao.png" alt="">
+                        </div>
+                        <h2>Carroceria</h2>
+                    </div>
+                    <div class="separacao-gerais-maior">
+                        <hr>
+                    </div>
+                    <p>Sedan</p>
+                </div>
+
+                <div class="informacoes-gerais-conteudo">
+                    <div class="titulo-gerais">
+                        <div class="icons-gerais">
+                            <img src="src/images/icons/combustivel.png" alt="">
+                        </div>
+                        <h2>Combustivel</h2>
+                    </div>
+                    <div class="separacao-gerais-maior">
+                        <hr>
+                    </div>
+                    <p>Flex</p>
+                </div>
+
+                <div class="informacoes-gerais-conteudo">
+                    <div class="titulo-gerais">
+                        <div class="icons-gerais">
+                            <img src="src/images/icons/dinheiro.png" alt="">
+                        </div>
+                        <h2>valor</h2>
+                    </div>
+                    <div class="separacao-gerais">
+                        <hr>
+                    </div>
+                    <span>R$</span>
+                    <span>80.000</span>
+                </div>
+            </div>
+        </section>
+        <section id="Informacoes">
+            <div class="informacoes-container">
+                <div class="informacoes-conteudo">
+                    <h2>Conforto interior</h2>
+                <div class="separacao-info">
+                    <hr>
+                </div>
+                <div class="informacoes-conteudo-checklist">
+                    <ul>
+                        <li>
+                            <div class="imagem-lista">
+                                <img src="src/images/visto.png" alt="">
+                            </div>
+    
+                            <p>Pacotes de Desempenho</p>
+                        </li>
+                        <li>
+                            <div class="imagem-lista">
+                                <img src="src/images/visto.png" alt="">
+                            </div>
+    
+                            <p>Suspensão Esportiva</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="informacoes-container">
+                <div class="informacoes-conteudo">
+                        <h2>Segurança</h2>
+                        <div class="separacao-info">
+                            <hr>
+                        </div>
+                    <div class="informacoes-conteudo-checklist">
+                        <ul>
+                            <li>
+                                <div class="imagem-lista">
+                                    <img src="src/images/visto.png" alt="">
+                                </div>
+    
+                                <p>Pacotes de Desempenho</p>
+                            </li>
+                            <li>
+                                <div class="imagem-lista">
+                                    <img src="src/images/visto.png" alt="">
+                                </div>
+    
+                                <p>Suspensão Esportiva</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="informacoes-container">
+                <div class="informacoes-conteudo">
+                    <h2>Entretenimento e Conectividade</h2>
+                    <div class="separacao-info">
+                        <hr>
+                    </div>
+                    <div class="informacoes-conteudo-checklist">
+                        <ul>
+                            <li>
+                                <div class="imagem-lista">
+                                    <img src="src/images/visto.png" alt="">
+                                </div>
+    
+                                <p>Pacotes de Desempenho</p>
+                            </li>
+                            <li>
+                                <div class="imagem-lista">
+                                    <img src="src/images/visto.png" alt="">
+                                </div>
+    
+                                <p>Suspensão Esportiva</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="informacoes-container">
+                <div class="informacoes-conteudo">
+                    <h2>tecnologia avançada</h2>
+                    <div class="separacao-info">
+                        <hr>
+                    </div>
+                    <div class="informacoes-conteudo-checklist">
+                        <ul>
+                            <li>
+                                <div class="imagem-lista">
+                                    <img src="src/images/visto.png" alt="">
+                                </div>
+    
+                                <p>Pacotes de Desempenho</p>
+                            </li>
+                            <li>
+                                <div class="imagem-lista">
+                                    <img src="src/images/visto.png" alt="">
+                                </div>
+    
+                                <p>Suspensão Esportiva</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="informacoes-container">
+                <div class="informacoes-conteudo">
+                    <h2>Estilo exterior</h2>
+                    <div class="separacao-info">
+                        <hr>
+                    </div>
+                    <div class="informacoes-conteudo-checklist">
+                        <ul>
+                            <li>
+                                <div class="imagem-lista">
+                                    <img src="src/images/visto.png" alt="">
+                                </div>
+    
+                                <p>Pacotes de Desempenho</p>
+                            </li>
+                            <li>
+                                <div class="imagem-lista">
+                                    <img src="src/images/visto.png" alt="">
+                                </div>
+    
+                                <p>Suspensão Esportiva</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="informacoes-container">
+                <div class="informacoes-conteudo">
+                    <h2>personalização e estilo</h2>
+                    <div class="separacao-info">
+                        <hr>
+                    </div>
+                    <div class="informacoes-conteudo-checklist">
+                        <ul>
+                            <li>
+                                <div class="imagem-lista">
+                                    <img src="src/images/visto.png" alt="">
+                                </div>
+    
+                                <p>Pacotes de Desempenho</p>
+                            </li>
+                            <li>
+                                <div class="imagem-lista">
+                                    <img src="src/images/visto.png" alt="">
+                                </div>
+    
+                                <p>Suspensão Esportiva</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="informacoes-container">
+                <div class="informacoes-conteudo">
+                        <h2>DESEMPENHO</h2>
+                    <div class="separacao-info">
+                        <hr>
+                    </div>
+                    <div class="informacoes-conteudo-checklist">
+                        <ul>
+                            <li>
+                                <div class="imagem-lista">
+                                    <img src="src/images/visto.png" alt="">
+                                </div>
+
+                                <p>Pacotes de Desempenho</p>
+                            </li>
+                            <li>
+                                <div class="imagem-lista">
+                                    <img src="src/images/visto.png" alt="">
+                                </div>
+
+                                <p>Suspensão Esportiva</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="informacoes-container">
+                <div class="informacoes-conteudo">
+                    <h2>Economia de Combustível</h2>
+                    <div class="separacao-info">
+                        <hr>
+                    </div>
+                    <div class="informacoes-conteudo-checklist">
+                        <ul>
+                            <li>
+                                <div class="imagem-lista">
+                                    <img src="src/images/visto.png" alt="">
+                                </div>
+
+                                <p>Pacotes de Desempenho</p>
+                            </li>
+                            <li>
+                                <div class="imagem-lista">
+                                    <img src="src/images/visto.png" alt="">
+                                </div>
+
+                                <p>Suspensão Esportiva</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="informacoes-container">
+                <div class="informacoes-conteudo">
+                        <h2>Conveniência</h2>
+                    <div class="separacao-info">
+                        <hr>
+                    </div>
+                    <div class="informacoes-conteudo-checklist">
+                        <ul>
+                            <li>
+                                <div class="imagem-lista">
+                                    <img src="src/images/visto.png" alt="">
+                                </div>
+
+                                <p>Pacotes de Desempenho</p>
+                            </li>
+                            <li>
+                                <div class="imagem-lista">
+                                    <img src="src/images/visto.png" alt="">
+                                </div>
+
+                                <p>Suspensão Esportiva</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>         
+            </div>
+        </section>
+    </main>
+<!--JAVASCRIPT-->
+<script src="src/js/script.js"></script>
+</body>
+</html>

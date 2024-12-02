@@ -1,0 +1,112 @@
+main{
+    height: 150vh;
+}
+.container-login{
+    display: flex;
+    justify-content: center;
+}
+.card-login{
+    height: 650px;
+    width: 800px;
+    padding: 1em;
+    border-radius: 2em;
+    margin-top: 5em;
+    background-color: rgb(33, 33, 33);
+}
+.topo-card{
+    padding: 2em;
+    background-color: rgb(33, 33, 33);
+    border-radius: 2em 2em 0 0;
+    color: #FFFFFF;
+}
+.logo-login{
+    display: flex;
+    justify-content: center;
+}
+.logo-login img{
+    height: 85px;
+    width: 200px;
+    object-fit: cover;
+}
+.separacao-login hr{
+    width: 700px;
+    padding: 1px;
+    background-color: #FF7E1D;
+    border-radius: 50%;
+}
+.card-login h1, p{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+.separacao-login{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+.form-card{
+    display: flex;
+    justify-content: center;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2em;
+}
+.input-group label{
+    margin-left: 1em;
+    letter-spacing: 0.5px;
+    margin-bottom: 3px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+.input-group input{
+    width: 400px;
+    border-radius: 2em;
+    padding: 8px;
+    background-color: #FAF9F6;
+}
+.input-group input:focus{
+    border: #FF7E1D 2px solid;
+    outline: none;
+}
+.form-button{
+    display: flex;
+    justify-content: center;
+}
+.form-button button{
+    padding: 8px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #FF7E1D;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    cursor: pointer;
+    transition: ease-in-out 230ms;
+}
+.form-button button:hover{
+    background-color: #ce7028;
+}
+
+@media (max-width: 830px){
+    .card-login{
+        width: 640px;
+    }
+}
+@media (max-width: 670px){
+    .card-login{
+        width: 400px;
+    }
+    .input-group input{
+        width: 300px;
+    }
+}
+@media (max-width: 425px){
+    .card-login{
+        width: 300px;
+    }
+    .input-group input{
+        width: 250px;
+    }
+}

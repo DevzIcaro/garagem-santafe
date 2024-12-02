@@ -1,0 +1,499 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garagem Santa Fé</title>
+    <!--LINK FAVICON-->
+    <link rel="shortcut icon" type="image.jpg" href="src/images/favicon.ico">
+    <!--REMIXICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" crossorigin="">
+    <!--CSS-->
+    <link rel="stylesheet" href="src/css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="moldura-logo">
+                <a href="#" class="logo">
+                    <img src="src/images/Santa Fé Veículos 2021.png" alt="">
+                </a>
+            </div>
+        </div>
+        <nav>
+            <div class="sidebar">
+                <ul>
+                    <li onclick=hideSidebar()><a href="#" class="sidebar-btn-close"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
+                    <li data-target="Hero">
+                        <a href="#Hero" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li>
+                        <a href="cadastro.html">Cadastre</a>
+                    </li>
+                    <li data-target="Servicos">
+                        <a href="#">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li data-target="Slider">
+                        <a href="#">Produtos</a>
+                    </li>
+                    <li data-target="Sobre-nos-2">
+                        <a href="#">Sobre Nós</a>
+                    </li>
+                    <li data-target="Contatos">
+                        <a href="#">Contatos</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-items">
+                <ul>
+                    <li data-target="Hero">
+                        <a href="#" class="active esconderEmMobile">Home</a>
+                    </li>
+                    <li data-target="Servicos">
+                        <a href="#" class="esconderEmMobile">Serviços</a>
+                    </li>
+                    <li data-target="Slider">
+                        <a href="#" class="esconderEmMobile">Catálogo</a>
+                    </li>
+                    <li data-target="Sobre-nos-2">
+                        <a href="#" class="esconderEmMobile">Sobre Nós</a>
+                    </li>
+                    <li data-target="Contatos">
+                        <a href="#" class="esconderEmMobile">Contatos</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-btn">
+                <a href="login.html" class="nav-btn-item">Login</a>
+            </div>
+
+            <div class="nav-btn">
+                <a href="cadastro.html" class="nav-btn-item">Cadastre</a>
+            </div>
+
+            <div class="nav-btn-menu esconderEmDesktop">
+                <ul>
+                    <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                viewBox="0 -960 960 960" width="24">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="Hero">
+            <div class="hero-container topicos">
+                <div class="hero-conteudo">
+                    <h1>BEM-VINDO</h1>
+                    <h1>A SANTA FÉ VEÍCULOS</h1>
+                    <p>Descubra a emoção de dirigir o carro dos seus sonhos. Encontre sua próxima aventura automotiva
+                        conosco!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="Servicos" id="Servicos">
+            <div class="servicos-container">
+                <div class="servicos-titulo topicos">
+                    <h2>SERVIÇOS</h2>
+                    <div class="separacao-servicos">
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="servicos-lista-container-2 topicos">
+                    <div class="servicos-lista-conteudo">
+                        <div class="servicos-lista-titulo">
+                            <h3>Compra</h3>
+                        </div>
+                        <div class="servicos-container-imagem">
+                            <img src="src/images/checklist.png" alt="1">
+                        </div>
+                    </div>
+
+                    <div class="servicos-lista-conteudo">
+                        <div class="servicos-lista-titulo">
+                            <h3>Venda</h3>
+                        </div>
+                        <div class="servicos-container-imagem">
+                            <img src="src/images/loan.png" alt="1">
+                        </div>
+                    </div>
+
+                    <div class="servicos-lista-conteudo">
+                        <div class="servicos-lista-titulo">
+                            <h3>Troca</h3>
+                        </div>
+                        <div class="servicos-container-imagem">
+                            <img src="src/images/agreement.png" alt="1">
+                        </div>
+                    </div>
+
+                    <div class="servicos-lista-conteudo">
+                        <div class="servicos-lista-titulo">
+                            <h3>Financiamento</h3>
+                        </div>
+                        <div class="servicos-container-imagem">
+                            <img src="src/images/stats.png" alt="1">
+                        </div>
+                    </div>
+
+                    <div class="servicos-lista-conteudo">
+                        <div class="servicos-lista-titulo">
+                            <h3>Consignação</h3>
+                        </div>
+                        <div class="servicos-container-imagem">
+                            <img src="src/images/consignment.png" alt="1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Slider" id="Slider">
+            <div class="slider-container">
+                <div class="slider-conteudo-container">
+                    <div class="slider-titulo topicos">
+                        <h2>CATÁLOGO</h2>
+                        <div class="separacao">
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="slider-conteudo topicos">
+                        <div class="slider-conteudo-paragrafos">
+                            <p>Descubra uma ampla seleção de carros de qualidade no nosso showroom virtual. Encontre o
+                                veículo perfeito para você, seja um carro esportivo, um SUV familiar ou um compacto
+                                ágil.</p>
+                            <span>Clique abaixo e explore nosso catálogo para encontrar seu próximo carro dos
+                                sonhos!</span>
+                        </div>
+                    </div>
+                    <div class="slider-button">
+                        <a href="catalogo.html">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Carousel" id="Carousel">
+            <div class="carousel topicos">
+                <div class="carousel-item card-visivel">
+                    <div class="card">
+                        <div class="imagem-carro">
+                            <img src="src/images/carro1.jpg" alt="">
+                        </div>
+                        <div class="botao-carro">
+                            <a href="info-carro.html">
+                                Ver Mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="imagem-carro">
+                            <img src="src/images/carro2.jpg" alt="">
+                        </div>
+                        <div class="botao-carro">
+                            <a href="info-carro.html">
+                                Ver Mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="imagem-carro">
+                            <img src="src/images/carro3.jpg" alt="">
+                        </div>
+                        <div class="botao-carro">
+                            <a href="info-carro.html">
+                                Ver Mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-acoes">
+                    <button id="carousel_button--prev">
+                        <img src="src/images/setas/left-arrow.png" alt="">
+                    </button>
+
+                    <button id="carousel_button--next">
+                        <img src="src/images/setas/right-arrow.png" alt="">
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="Sobre-nos" id="Sobre-nos-2">
+            <div class="sobre-nos-container topicos">
+                <div class="sobre-nos-titulo">
+                    <h1>Sobre Nós</h1>
+                </div>
+                <div class="separacao">
+                    <hr>
+                </div>
+                <div class="sobre-nos-conteudo">
+                    <div class="topico-icon-esquerda">
+                        <div class="icon-supercontainer">
+                            <div class="icon-container">
+                                <i class="ri-shake-hands-line"></i>
+                                <div class="subtitulo-icon">
+                                    <span>Confiança</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Na Santa Fé Veículos, sua confiança é nossa prioridade. Oferecemos atendimento transparente e personalizado, garantindo uma experiência tranquila e satisfatória.
+                        </p>
+                    </div>
+                    <div class="topico-icon-direita">
+                        <p>Vender, trocar ou financiar seu carro? Temos as melhores opções, com condições acessíveis e processo simples. Para vender com mais tranquilidade, oferecemos segurança e praticidade.</p>
+                        <div class="icon-supercontainer">
+                            <div class="icon-container">
+                                <i class="ri-customer-service-line"></i>
+                                <div class="subtitulo-icon">
+                                    <span>Serviços</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topico-icon-esquerda">
+                        <div class="icon-supercontainer">
+                            <div class="icon-container">
+                                <i class="ri-p2p-line"></i>
+                                <div class="subtitulo-icon">
+                                    <span>Compromisso</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>                       Nosso compromisso é oferecer uma experiência simples e sem surpresas, com um atendimento atencioso. Conte conosco para dar o próximo passo com confiança!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-box">
+                <div class="titulo-map-box topicos">
+                    <h1>Venha Conhecer Nossa Loja Pessoalmente</h1>
+                </div>
+
+                <div class="mapa topicos">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d468.0563047276264!2d-50.92559!3d-20.198595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9499c715376c97a7%3A0xb097b0eda6c1dbaa!2zU2FudGEgRsOpIFZlw61jdWxvcw!5e0!3m2!1sen!2sbr!4v1730958142973!5m2!1sen!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            </div>
+            <div class="botao-localizacao topicos">
+                <a href="https://maps.app.goo.gl/LdhVU5XPb8FzdnDfA" target="_blank">
+                    <div class="container-localizacao">
+                        <img src="src/images/placeholder.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="Contatos" id="Contatos">
+            <div class="contatos-container ">
+                <h2 class="contatos-titulo topicos">CONTATOS</h2>
+                <div class="separacao-contatos">
+                    <hr>
+                </div>
+
+                <div class="contatos-grupo-cards topicos">
+                    <div class="contatos-card">
+                        <div class="contatos-card-imagem">
+                            <div class="contatos-centralizacao-imagem">
+                                <img src="src/images/IMG_2640.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="contatos-card-titulo">
+                            <h3>Pedro Costa</h3>
+                        </div>
+
+                        <div class="contatos-card-conteudo">
+                            <p>CEO da Garagem Santa Fé</p>
+                        </div>
+
+                        <div class="contatos-grupo-card-icones">
+                            <div class="contatos-card-icones">
+                                <div class="contatos-icones">
+                                    <a href="https://wa.me/5517996442152" target="_blank">
+                                        <i class="ri-whatsapp-line"></i>
+                                    </a>
+                                </div>
+
+                                <div class="contatos-icones">
+                                    <a href="mailto:pedrorcosta2011@hotmail.com" target="_blank">
+                                        <i class="ri-mail-line"></i>
+                                    </a>
+                                </div>
+
+                                <div class="contatos-icones">
+                                    <a href="https://www.instagram.com/santafe.veiculos/" target="_blank">
+                                        <i class="ri-instagram-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contatos-card">
+                        <div class="contatos-card-imagem">
+                            <div class="contatos-centralizacao-imagem">
+                                <img src="src/images/IMG_2591.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="contatos-card-titulo">
+                            <h3>Edelner Poleto</h3>
+                        </div>
+
+
+                        <div class="contatos-card-conteudo">
+                            <p>CEO da Garagem Santa Fé</p>
+                        </div>
+
+                        <div class="contatos-grupo-card-icones">
+                            <div class="contatos-card-icones">
+                                <div class="contatos-icones">
+                                    <a href="https://wa.me/5517996111111" target="_blank">
+                                        <i class="ri-whatsapp-line"></i>
+                                    </a>
+                                </div>
+
+                                <div class="contatos-icones">
+                                    <a href="mailto:edelner@hotmail.com" target="_blank">
+                                        <i class="ri-mail-line"></i>
+                                    </a>
+                                </div>
+
+                                <div class="contatos-icones">
+                                    <a href="https://www.instagram.com/santafe.veiculos/" target="_blank">
+                                        <i class="ri-instagram-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--JAVASCRIPT-->
+    <script src="src/js/script.js"></script>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-loc-contatos">
+            <div class="footer-titulo">
+                <h2>SANTA FÉ VEÍCULOS</h2>
+            </div>
+            <div class="footer-localizacao">
+                <p>1820, Av.Navarro de Andrade - Centro</p>
+                <p>CEP 15775-000, Santa Fé do Sul</p>
+                <p>Brasil - SP</p>
+            </div>
+            <div class="contatos-footer">
+                <div class="contatos-footer-container">
+                    <div class="footer-contatos-telefone">
+                        <i class="ri-whatsapp-line">
+                            <a href="https://wa.me/5517996442152">
+                                <span>(17)99644-2152</span>
+                            </a>
+                        </i>
+
+                        <div class="footer-email">
+                            <a href="mailto:pedrorcosta2011@hotmail.com" target="_blank">
+                                <h4>pedrorcosta2011@hotmail.com</h4>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-contatos-telefone">
+                        <i class="ri-whatsapp-line">
+                            <a href="https://wa.me/5517996111111">
+                                <span>(17)99611-1111</span>
+                            </a>
+                        </i>
+
+                        <div class="footer-email">
+                            <a href="mailto:edelner@hotmail.com" target="_blank">
+                                <h4>edelner@hotmail.com</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-links-uteis">
+            <div class="footer-link-uteis-lista">
+                <div class="footer-links-uteis-titulo">
+                    <h3>LINKS ÚTEIS</h3>
+                </div>
+                <div class="footer-link-lista">
+                    <ul>
+                        <li><i class="ri-arrow-right-s-line"></i><a href="info-carro.html">Hero</a></li>
+                        <li><i class="ri-arrow-right-s-line"></i><a href="#Slider">Serviços</a></li>
+                        <li><i class="ri-arrow-right-s-line"></i><a href="#Sobre-nos">Sobre Nós</a></li>
+                        <li><i class="ri-arrow-right-s-line"></i><a href="#Contatos">Contatos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-links-redes">
+            <div class="footer-redes-titulo">
+                <h3>NOSSAS REDES SOCIAIS</h3>
+            </div>
+            <div class="footer-redes-conteudo">
+                <p>lorem invictum parlem amene.</p>
+                <div class="footer-redes-conteudo-lista">
+                    <div class="footer-icons">
+                        <div class="footer-icons">
+                            <a href="https://www.facebook.com/santafe.veiculos.3/" target="_blank"><i
+                                    class="ri-facebook-circle-line"></i></i></a>
+
+
+                            <a href="https://www.instagram.com/santafe.veiculos/" target="_blank"><i
+                                    class="ri-instagram-line"></i></a>
+
+                            <a href="mailto:santafe_veiculos@hotmail.com" target="_blank"><i
+                                    class="ri-mail-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
